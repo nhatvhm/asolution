@@ -5,7 +5,7 @@ import (
 
 	"github.com/beego"
 	"github.com/nhatvhm/asolution/models"
-	"convert"
+	"github.com/ikeikeikeike/gopkg/convert"
 )
 
 type BaseController struct {
