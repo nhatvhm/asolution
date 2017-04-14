@@ -3,9 +3,9 @@ package models
 import (
 	"time"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego/validation"
+	"beego"
+	"beego/orm"
+	"beego/validation"
 )
 
 type User struct {

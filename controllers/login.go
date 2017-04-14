@@ -3,7 +3,7 @@ package controllers
 import (
 	"html/template"
 
-	"github.com/astaxie/beego"
+	"beego"
 
 	"github.com/nhatvhm/asolution/lib"
 	"github.com/nhatvhm/asolution/models"

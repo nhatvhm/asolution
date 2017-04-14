@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"i18n"
+	"beego"
+	"beego/i18n"
 	"convert"
 	"go-runewidth"
 
-	"beego"
 )
 
 func init() {

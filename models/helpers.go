@@ -3,8 +3,8 @@ package models
 import (
 	"errors"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/validation"
+	"beego"
+	"beego/validation"
 )
 
 /*
