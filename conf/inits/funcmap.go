@@ -9,7 +9,7 @@ import (
 
 	"github.com/beego"
 	"github.com/beego/i18n"
-	"convert"
+	"github.com/ikeikeikeike/gopkg/convert"
 	"github.com/mattn/go-runewidth"
 
 )
