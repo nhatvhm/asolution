@@ -3,9 +3,9 @@ package controllers
 import (
 	"fmt"
 
-	"github.com/beego"
+	"vendor/github.com/beego"
 	"github.com/nhatvhm/asolution/models"
-	"github.com/ikeikeikeike/gopkg/convert"
+	"vendor/github.com/ikeikeikeike/gopkg/convert"
 )
 
 type BaseController struct {

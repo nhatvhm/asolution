@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/nhatvhm/asolution/models"
-	"github.com/ikeikeikeike/gopkg/convert"
+	"vendor/github.com/ikeikeikeike/gopkg/convert"
 )
 
 func SignupUser(u *models.User) (int64, error) {

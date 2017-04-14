@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/beego"
+	"vendor/github.com/beego"
 	"github.com/nhatvhm/asolution/controllers"
 )
 

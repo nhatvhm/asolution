@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ikeikeikeike/gopkg/convert"
+	"vendor/github.com/ikeikeikeike/gopkg/convert"
 
 	"github.com/nhatvhm/asolution/models"
 )

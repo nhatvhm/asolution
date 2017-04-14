@@ -3,9 +3,9 @@ package models
 import (
 	"time"
 
-	"github.com/beego"
-	"github.com/beego/orm"
-	"github.com/beego/validation"
+	"vendor/github.com/beego"
+	"vendor/github.com/beego/orm"
+	"vendor/github.com/beego/validation"
 )
 
 type User struct {
