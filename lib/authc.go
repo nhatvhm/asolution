@@ -6,7 +6,7 @@ import (
 
 	"github.com/ikeikeikeike/gopkg/convert"
 
-	"github.com/ikeikeikeike/beego-samples/auth/models"
+	"asolution/models"
 )
 
 /*

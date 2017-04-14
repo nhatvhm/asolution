@@ -3,7 +3,7 @@ package inits
 import (
 	"time"
 
-	_ "github.com/ikeikeikeike/beego-samples/auth/models"
+	_ "asolution/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
