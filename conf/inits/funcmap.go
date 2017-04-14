@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/beego/i18n"
-	"github.com/ikeikeikeike/gopkg/convert"
+	"beego/i18n"
+	"gopkg/convert"
 	"github.com/mattn/go-runewidth"
 
-	"github.com/astaxie/beego"
+	"beego"
 )
 
 func init() {
