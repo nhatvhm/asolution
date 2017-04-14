@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/astaxie/beego"
+	"vendor/beego"
 	"github.com/nhatvhm/asolution/conf/inits"
 	"github.com/nhatvhm/asolution/routers"
 )
