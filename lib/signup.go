@@ -3,7 +3,7 @@ package lib
 import (
 	"errors"
 
-	"asolution/models"
+	"/asolution/models"
 	"github.com/ikeikeikeike/gopkg/convert"
 )
 

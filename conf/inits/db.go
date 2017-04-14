@@ -3,13 +3,13 @@ package inits
 import (
 	"time"
 
-	_ "asolution/models"
+	"/asolution/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 
-	_ "github.com/lib/pq"
-	_ "github.com/mattn/go-sqlite3"
+	"github.com/lib/pq"
+	"github.com/mattn/go-sqlite3"
 )
 
 func init() {
