@@ -8,16 +8,6 @@
 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f"
 		},
 		{
- 			"path": "github.com/astaxie/beego/i18n",
- 			"comment": "beego 1.8",
- 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f"
- 		},
-		{
- 			"path": "github.com/astaxie/beego/orm",
- 			"comment": "beego 1.8",
- 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f"
- 		},
-		{
  			"path": "github.com/lib/pq",
  			"comment": "pq",
  			"revision": "2704adc878c21e1329f46f6e56a1c387d788ff94"
@@ -31,11 +21,6 @@
  			"path": "github.com/ikeikeikeike/gopkg/convert",
  			"comment": "convert",
  			"revision": "dba476424b0792297ae49a31d701e609fa711579"
- 		},
-		{
- 			"path": "github.com/astaxie/beego/validation",
- 			"comment": "beego 1.8",
- 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f"
  		}
 	],
 	"rootPath": "github.com/nhatvhm/asolution"
