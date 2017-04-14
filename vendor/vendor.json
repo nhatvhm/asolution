@@ -1,0 +1,7 @@
+govendor fetch github.com/astaxie/beego
+govendor fetch github.com/astaxie/beego/i18n
+govendor fetch github.com/astaxie/beego/orm
+govendor fetch github.com/lib/pq
+govendor fetch github.com/mattn/go-sqlite3
+govendor fetch github.com/ikeikeikeike/gopkg/convert
+govendor fetch github.com/astaxie/beego/validation
