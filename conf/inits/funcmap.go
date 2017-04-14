@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"beego"
-	"beego/i18n"
+	"i18n"
 	"convert"
 	"go-runewidth"
 
