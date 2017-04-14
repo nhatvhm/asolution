@@ -18,6 +18,11 @@
  			"revision": "cf7286f069c3ef596efcc87781a4653a2e7607bd"
  		},
 		{
+ 			"path": "github.com/mattn/go-runewidth",
+ 			"comment": "go-runewidth",
+ 			"revision": "14207d285c6c197daabb5c9793d63e7af9ab2d50"
+ 		},
+		{
  			"path": "github.com/ikeikeikeike/gopkg/convert",
  			"comment": "convert",
  			"revision": "dba476424b0792297ae49a31d701e609fa711579"

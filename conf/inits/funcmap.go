@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"beego/i18n"
-	"gopkg/convert"
-	"github.com/mattn/go-runewidth"
+	"convert"
+	"go-runewidth"
 
 	"beego"
 )

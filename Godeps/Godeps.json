@@ -40,5 +40,11 @@
  			"Comment": "beego 1.8",
  			"Rev": "323a1c4214101331a4b71922c23d19b7409ac71f"
  		}
+		,
+		{
+ 			"ImportPath": "github.com/mattn/go-runewidth",
+ 			"Comment": "go-runewidth",
+ 			"Rev": "14207d285c6c197daabb5c9793d63e7af9ab2d50"
+ 		}
 	]
 }
