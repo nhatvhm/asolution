@@ -5,11 +5,11 @@ import (
 
 	"github.com/nhatvhm/asolution/models"
 
-	"./vendor/beego"
-	"./vendor/beego/orm"
+	"beego"
+	"beego/orm"
 
-	"github.com/lib/pq"
-	"github.com/mattn/go-sqlite3"
+	"pq"
+	"go-sqlite3"
 )
 
 func init() {
