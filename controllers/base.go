@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/astaxie/beego"
-	"github.com/ikeikeikeike/beego-samples/auth/models"
+	"github.com/nhatvhm/asolution/models"
 	"github.com/ikeikeikeike/gopkg/convert"
 )
 
