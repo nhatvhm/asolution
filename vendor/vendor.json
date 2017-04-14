@@ -26,7 +26,12 @@
  			"path": "github.com/ikeikeikeike/gopkg/convert",
  			"comment": "convert",
  			"revision": "dba476424b0792297ae49a31d701e609fa711579"
- 		}
+ 		},
+		{
+ 			"path": "github.com/Unknwon/goconfig",
+ 			"comment": "goconfig",
+ 			"revision": "87a46d97951ee1ea20ed3b24c25646a79e87ba5d"
+ 		},
 	],
 	"rootPath": "github.com/nhatvhm/asolution"
 }
