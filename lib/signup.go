@@ -3,7 +3,7 @@ package lib
 import (
 	"errors"
 
-	"./asolution/models"
+	"github.com/nhatvhm/asolution/models"
 	"github.com/ikeikeikeike/gopkg/convert"
 )
 

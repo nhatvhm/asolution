@@ -6,7 +6,7 @@ import (
 
 	"github.com/ikeikeikeike/gopkg/convert"
 
-	"/asolution/models"
+	"github.com/nhatvhm/asolution/models"
 )
 
 /*

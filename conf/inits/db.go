@@ -3,7 +3,7 @@ package inits
 import (
 	"time"
 
-	"/asolution/models"
+	"github.com/nhatvhm/asolution/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
