@@ -3,7 +3,7 @@ package controllers
 import (
 	"fmt"
 
-	"beego"
+	"github.com/beego"
 	"github.com/nhatvhm/asolution/models"
 	"convert"
 )

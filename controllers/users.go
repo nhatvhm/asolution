@@ -1,6 +1,6 @@
 package controllers
 
-import "beego"
+import "github.com/beego"
 
 type UsersController struct {
 	BaseController

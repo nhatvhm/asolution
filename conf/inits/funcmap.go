@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"beego"
-	"i18n"
+	"github.com/beego"
+	"github.com/beego/i18n"
 	"convert"
-	"go-runewidth"
+	"github.com/mattn/go-runewidth"
 
 )
 

@@ -9,8 +9,8 @@ import (
 
 	"github.com/nhatvhm/asolution/routers"
 
-	"beego"
-	. "github.com/smartystreets/goconvey/convey"
+	"github.com/beego"
+	"github.com/smartystreets/goconvey/convey"
 )
 
 func init() {
