@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"beego/i18n"
+	"i18n"
 	"convert"
 	"go-runewidth"
 
