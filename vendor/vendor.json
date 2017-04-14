@@ -1,5 +1,5 @@
 {
-	"comment": "",
+	"comment": "Dependencies for A Solution websites",
 	"ignore": "test",
 	"package": [
 		{
@@ -31,7 +31,11 @@
  			"path": "github.com/Unknwon/goconfig",
  			"comment": "goconfig",
  			"revision": "87a46d97951ee1ea20ed3b24c25646a79e87ba5d"
- 		},
+ 		}
 	],
-	"rootPath": "github.com/nhatvhm/asolution"
+	"heroku": {
+        "install" : [ "./..." ],
+        "goVersion": "go1.8"
+    },
+    "rootPath": "github.com/nhatvhm/asolution"
 }
