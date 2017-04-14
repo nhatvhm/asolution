@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	_ "./conf/inits"
-	_ "./routers"
+	"conf/inits"
+	"routers"
 )
 
 func main() {
