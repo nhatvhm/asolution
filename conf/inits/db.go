@@ -5,8 +5,8 @@ import (
 
 	"github.com/nhatvhm/asolution/models"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
+	"./vendor/beego"
+	"./vendor/beego/orm"
 
 	"github.com/lib/pq"
 	"github.com/mattn/go-sqlite3"
