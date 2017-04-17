@@ -5,7 +5,7 @@ import (
   "github.com/astaxie/beego/orm"
   _ "github.com/astaxie/beego/session/redis"
   _ "github.com/go-sql-driver/mysql"
-  "github.com/go-pg/pg"
+  _ "github.com/go-pg/pg"
 	_ "github.com/nhatvhm/asolution/routers"
 	_ "github.com/nhatvhm/asolution/models"
   "github.com/nhatvhm/asolution/controllers"
