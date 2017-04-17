@@ -1,13 +1,30 @@
 package routers
 
 import (
-	"vendor/github.com/beego"
+	"github.com/astaxie/beego"
 	"github.com/nhatvhm/asolution/controllers"
 )
 
+
 func init() {
-	beego.Router("/", &ctl.UsersController{}, "get:Index")
-	beego.Router("/login", &ctl.LoginController{}, "get,post:Login")
-	beego.Router("/logout", &ctl.LoginController{}, "get:Logout")
-	beego.Router("/signup", &ctl.LoginController{}, "get,post:Signup")
+
+  beego.Router("/", &controllers.IndexController{})
+
+	beego.Router("/accounts/signup", &controllers.SignupController{})
+
+	beego.Router("/accounts/signin", &controllers.SigninController{})
+
+	beego.Router("/accounts/signout", &controllers.SignoutController{})
+
+	beego.Router("/accounts/verify/:uuid([0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})", &controllers.AccountVerifyController{})
+
+  beego.Router("/accounts/profile", &controllers.ProfileController{})
+
+	beego.Router("/accounts/delete", &controllers.DeleteController{})
+
+  beego.Router("/accounts/security", &controllers.SecurityController{})
+
+  beego.Router("/accounts/forgotpassword", &controllers.ForgotPasswordController{})	
+
+  beego.Router("/accounts/resetpassword/:uuid([0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})", &controllers.ResetPasswordController{})
 }
