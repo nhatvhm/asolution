@@ -3,7 +3,7 @@ package controllers
 import (
   "github.com/astaxie/beego"
   "github.com/astaxie/beego/cache"
-  "github.com/astaxie/beego/cache/redis"
+  _ "github.com/astaxie/beego/cache/redis"
   "github.com/astaxie/beego/utils/captcha"
   "github.com/twinj/uuid"
 )

@@ -5,7 +5,7 @@ import (
   "github.com/astaxie/beego/orm"
   "github.com/astaxie/beego/utils"
   "github.com/astaxie/beego/validation"
-  "github.com/astaxie/beego/cache/redis"
+  _ "github.com/astaxie/beego/cache/redis"
   "github.com/twinj/uuid"
   "github.com/nhatvhm/asolution/models"
 )

@@ -4,7 +4,7 @@ import (
   "github.com/astaxie/beego"
   "github.com/astaxie/beego/orm"
   "github.com/astaxie/beego/validation"
-  "github.com/astaxie/beego/cache/redis"
+  _ "github.com/astaxie/beego/cache/redis"
   "golang.org/x/crypto/bcrypt"
   "github.com/nhatvhm/asolution/models"
 )
