@@ -64,11 +64,11 @@ apt-get install git mercurial
 
 go get github.com/beego/bee
 Almost there finally let’s pull the source code and explain some internals
-go get github.com/TalLannder/beego-ureg
+go get github.com/nhatvhm/asolution
 Note: all dependencies located in the vendor folder
 if all went well so far let’s continue to the fun part
 first things first, change to the source directory
-cd $HOME/gocode/src/github.com/TalLannder/beego-ureg
+cd $HOME/gocode/src/github.com/nhatvhm/asolution
 now there’s only a few small things you need to update in conf/app.conf before you start the application server and play around.
 vi conf/app.conf
 base_url = dev01.loc:8080
@@ -85,22 +85,21 @@ Gmail account might be subject to https://support.google.com/accounts/answer/601
 Start it plz do!
 bee run
 if all goes well the output should be similar to:
-root@ubuntu:~/gocode/src/github.com/TalLannder/beego-ureg# bee run
-2015/08/12 22:25:35 [INFO] Uses 'beego-ureg' as 'appname'
+root@ubuntu:~/gocode/src/github.com/nhatvhm/asolution# bee run
+2015/08/12 22:25:35 [INFO] Uses 'asolution' as 'appname'
 2015/08/12 22:25:35 [INFO] Initializing watcher...
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg/controllers)
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg)
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg/models)
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg/routers)
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg/tests)
-2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/TalLannder/beego-ureg/utilities/pbkdf2)
+2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/nhatvhm/asolution/controllers)
+2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/nhatvhm/asolution)
+2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/nhatvhm/asolution/models)
+2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/nhatvhm/asolution/routers)
+2015/08/12 22:25:35 [TRAC] Directory(/root/go/src/github.com/nhatvhm/asolution/tests)
 2015/08/12 22:25:35 [INFO] Start building...
 2015/08/12 22:25:36 [SUCC] Build was successful
 2015/08/12 22:25:36 [INFO] Restarting beego-ureg ...
 2015/08/12 22:25:36 [INFO] ./beego-ureg is running...
 create table `account`
     -- --------------------------------------------------
-    --  Table Structure for `github.com/TalLannder/beego-ureg/models.Account`
+    --  Table Structure for `github.com/nhatvhm/asolution/models.Account`
     -- --------------------------------------------------
     CREATE TABLE IF NOT EXISTS `account` (
         `uid` varchar(255) NOT NULL PRIMARY KEY,
