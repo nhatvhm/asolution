@@ -3,10 +3,10 @@ package main
 import (
 	"github.com/astaxie/beego"
   "github.com/astaxie/beego/orm"
-  "github.com/astaxie/beego/session/redis"
-  "github.com/go-sql-driver/mysql"
-	"github.com/nhatvhm/asolution/routers"
-	"github.com/nhatvhm/asolution/models"
+  _ "github.com/astaxie/beego/session/redis"
+  _ "github.com/go-sql-driver/mysql"
+	_ "github.com/nhatvhm/asolution/routers"
+	_ "github.com/nhatvhm/asolution/models"
   "github.com/nhatvhm/asolution/controllers"
 )
 
