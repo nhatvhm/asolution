@@ -111,6 +111,12 @@
 			"revisionTime": "2015-02-25T09:28:11Z"
 		},
 		{
+			"checksumSHA1": "",
+			"path": "github.com/go-pg/pg",
+			"revision": "7c2c6c2868c8c65af793dfd05c7aade682b571c3",
+			"revisionTime": "2017-04-14T16:31:17Z"
+		},
+		{
 			"checksumSHA1": "PT3+xPmICQYYJZFJYAqb4MS0tN4=",
 			"path": "github.com/jtolds/gls",
 			"revision": "f1ac7f4f24f50328e6bc838ca4437d1612a0243c",
