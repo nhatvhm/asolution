@@ -117,6 +117,12 @@
 			"revisionTime": "2017-04-14T16:31:17Z"
 		},
 		{
+			"checksumSHA1": "",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "1c35d901db3da928c72a72d8458480cc9ade058f",
+			"revisionTime": "2017-01-02T19:52:26Z"
+		},
+		{
 			"checksumSHA1": "PT3+xPmICQYYJZFJYAqb4MS0tN4=",
 			"path": "github.com/jtolds/gls",
 			"revision": "f1ac7f4f24f50328e6bc838ca4437d1612a0243c",
