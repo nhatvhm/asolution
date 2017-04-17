@@ -6,6 +6,8 @@ import (
   _ "github.com/astaxie/beego/session/redis"
   _ "github.com/go-sql-driver/mysql"
   _ "github.com/go-pg/pg"
+  _ "github.com/lib/pq"
+  "database/sql"
 	_ "github.com/nhatvhm/asolution/routers"
 	_ "github.com/nhatvhm/asolution/models"
   "github.com/nhatvhm/asolution/controllers"
