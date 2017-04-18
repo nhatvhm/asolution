@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Some Inc.">
     <meta name="author" content="Tal Lannder">
-    <link rel="icon" href="//{{.base_url}}/static/img/favicon.ico">
+    <link rel="icon" href="//{{.base_url}}/static/img/logo.png">
 
     <title>{{.Title}}</title>
     <!-- Bootstrap core CSS -->

@@ -10,7 +10,7 @@ import (
   _ "database/sql"
 	_ "github.com/nhatvhm/asolution/routers"
 	_ "github.com/nhatvhm/asolution/models"
-  "github.com/nhatvhm/asolution/controllers"
+  _ "github.com/nhatvhm/asolution/controllers"
 )
 
 
