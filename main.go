@@ -58,6 +58,6 @@ func init() {
 
 
 func main() {
-  beego.ErrorController(&controllers.ErrorController{})
+  //beego.ErrorController(&controllers.ErrorController{})
   beego.Run()
 }
