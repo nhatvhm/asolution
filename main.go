@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-  "html/template"
   "github.com/astaxie/beego/orm"
   _ "github.com/astaxie/beego/session/redis"
   _ "github.com/go-sql-driver/mysql"
