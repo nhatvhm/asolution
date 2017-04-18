@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/astaxie/beego"
+  "html/template"
   "github.com/astaxie/beego/orm"
   _ "github.com/astaxie/beego/session/redis"
   _ "github.com/go-sql-driver/mysql"
@@ -10,7 +11,7 @@ import (
   _ "database/sql"
 	_ "github.com/nhatvhm/asolution/routers"
 	_ "github.com/nhatvhm/asolution/models"
-  _ "github.com/nhatvhm/asolution/controllers"
+  "github.com/nhatvhm/asolution/controllers"
 )
 
 
@@ -40,6 +41,7 @@ func init() {
     panic("Main Init: - Unable to start the server can't parse db_write_MaxConn from configuration file must be int.")
   }
   
+  orm.RegisterDriver("postgres", orm.DRPostgres)
   orm.RegisterDataBase("default", db_read_DriverName, db_read_ConnString, db_read_MaxIdle, db_read_MaxConn)
   orm.RegisterDataBase("write", db_write_DriverName, db_write_ConnString, db_write_MaxIdle, db_write_MaxConn)
 
@@ -58,6 +60,6 @@ func init() {
 
 
 func main() {
-  //beego.ErrorController(&controllers.ErrorController{})
+  beego.ErrorController(&controllers.ErrorController{})
   beego.Run()
 }
