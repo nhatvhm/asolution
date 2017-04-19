@@ -127,7 +127,7 @@ func VerifyPassword(rawPwd, encodedPwd string) bool {
 // customize filters for fine grain authorization
 var FilterUser = func(ctx *context.Context) {
 	_, ok := ctx.Input.Session(sessionName).(int)
-	if !ok && ctx.Input.Uri() != "/login" && ctx.Input.Uri() != "/register" {
+	if !ok && ctx.Input.URI() != "/login" && ctx.Input.URI() != "/register" {
 		ctx.Redirect(302, "/login")
 	}
 }
