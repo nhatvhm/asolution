@@ -10,6 +10,8 @@ import (
 	_ "github.com/lib/pq"
 	"log"
 	"time"
+	"strconv"
+    "os"
 )
 
 var (
@@ -52,5 +54,9 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
+	// port, err := strconv.Atoi(os.Getenv("PORT"))
+    if err == nil {
+        beego.HttpPort = port
+    }
 	beego.Run()
 }
