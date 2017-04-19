@@ -25,7 +25,7 @@ var(
 
 func init() {
   store, _ := cache.NewCache(CacheProvider, CacheConnection)
-  cpt = captcha.NewWithFilter("/accounts/captca/", store)
+  cpt = captcha.NewWithFilter("/accounts/captcha/", store)
 }
 
 
