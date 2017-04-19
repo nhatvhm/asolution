@@ -15,14 +15,22 @@ import (
 var (
    dbConnectString string = beego.AppConfig.String("dbConnectString")
    dbDriverName string = beego.AppConfig.String("dbDriverName")
-   dbMaxIdle int = beego.AppConfig.Int("dbMaxIdle")
-   dbMaxConn int = beego.AppConfig.Int("dbMaxConn")
+   dbMaxIdle, dbMaxIdleErr = beego.AppConfig.Int("dbMaxIdle")
+   dbMaxConn, dbMaxConnErr = beego.AppConfig.Int("dbMaxConn")
  )
 
 func init() {
 	// Development Settings, adjust for production
 	// mysql / sqlite3 / postgres driver registered by default already
 	orm.RegisterDriver(dbDriverName, orm.DRPostgres)
+
+	if dbMaxIdleErr != nil {
+      panic("Main Init: - Unable to start the server can't parse dbMaxIdleErr from configuration file must be int.")
+    }
+   
+    if dbMaxConnErr != nil {
+      panic("Main Init: - Unable to start the server can't parse dbMaxConnErr from configuration file must be int.")
+    }
 
 	//                    db alias  drivername
 	orm.RegisterDataBase("default", dbDriverName, dbConnectString, dbMaxIdle, dbMaxConn)
