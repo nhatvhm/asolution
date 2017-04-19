@@ -12,6 +12,13 @@ import (
 	"time"
 )
 
+var (
+   dbConnectString string = beego.AppConfig.String("dbConnectString")
+   dbDriverName string = beego.AppConfig.String("dbDriverName")
+   dbMaxIdle = beego.AppConfig.Int("dbMaxIdle")
+   dbMaxConn = beego.AppConfig.Int("dbMaxConn")
+ )
+
 func init() {
 	// Development Settings, adjust for production
 	// mysql / sqlite3 / postgres driver registered by default already
@@ -24,8 +31,8 @@ func init() {
 }
 
 func main() {
-	beego.TemplateLeft = "<<<" // set to make internal template compatible with most front ends i.e. Angular, Polymer, etc
-	beego.TemplateRight = ">>>"
+	//beego.TemplateLeft = "<<<" // set to make internal template compatible with most front ends i.e. Angular, Polymer, etc
+	//beego.TemplateRight = ">>>"
 
 	name := "default"
 	// Whether to drop table and re-create.
