@@ -2,63 +2,40 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-  "github.com/astaxie/beego/orm"
-  _ "github.com/astaxie/beego/session/redis"
-  _ "github.com/go-sql-driver/mysql"
-  _ "github.com/go-pg/pg"
-  _ "github.com/lib/pq"
-  _ "database/sql"
-	_ "github.com/nhatvhm/asolution/routers"
+	"github.com/astaxie/beego/orm"
+	_ "github.com/astaxie/beego/session/mysql" // used for all session stores
+	_ "github.com/astaxie/beego/session/redis"
 	_ "github.com/nhatvhm/asolution/models"
-  "github.com/nhatvhm/asolution/controllers"
+	_ "github.com/nhatvhm/asolution/routers"
+	_ "github.com/lib/pq"
+	"log"
+	"time"
 )
-
-
-var (
-  db_write_Force, _ = beego.AppConfig.Bool("db_write_Force")
-  db_write_LogVerbose, _ = beego.AppConfig.Bool("db_write_LogVerbose")
-  db_write_ConnString string = beego.AppConfig.String("db_write_ConnString")
-  db_write_DriverName string = beego.AppConfig.String("db_write_DriverName")
-  db_write_MaxIdle, db_write_MaxIdleErr = beego.AppConfig.Int("db_write_MaxIdle")
-  db_write_MaxConn, db_write_MaxConnErr = beego.AppConfig.Int("db_write_MaxConn")
-
-  db_read_LogVerbose, _ = beego.AppConfig.Bool("db_read_LogVerbose")
-  db_read_ConnString string = beego.AppConfig.String("db_read_ConnString")
-  db_read_DriverName string = beego.AppConfig.String("db_read_DriverName")
-  db_read_MaxIdle, db_read_MaxIdleErr = beego.AppConfig.Int("db_read_MaxIdle")
-  db_read_MaxConn, db_read_MaxConnErr = beego.AppConfig.Int("db_read_MaxConn")
-)
-
 
 func init() {
+	// Development Settings, adjust for production
+	// mysql / sqlite3 / postgres driver registered by default already
+	orm.RegisterDriver(dbDriverName, orm.DRPostgres)
 
-  if db_write_MaxIdleErr != nil {
-    panic("Main Init: - Unable to start the server can't parse db_write_MaxIdleErr from configuration file must be int.")
-  }
-  
-  if db_write_MaxConnErr != nil {
-    panic("Main Init: - Unable to start the server can't parse db_write_MaxConn from configuration file must be int.")
-  }
-  
-  orm.RegisterDriver("postgres", orm.DRPostgres)
-  orm.RegisterDataBase("default", db_read_DriverName, db_read_ConnString, db_read_MaxIdle, db_read_MaxConn)
-  orm.RegisterDataBase("write", db_write_DriverName, db_write_ConnString, db_write_MaxIdle, db_write_MaxConn)
+	//                    db alias  drivername
+	orm.RegisterDataBase("default", dbDriverName, dbConnectString, dbMaxIdle, dbMaxConn)
+	orm.DefaultTimeLoc = time.UTC
 
-  // Drop table and re-create.
-  force := db_write_Force
-
-  // Print log.
-  verbose := db_write_LogVerbose
-
-  // Database alias, Drop table and re-create, Print log
-  err := orm.RunSyncdb("write", force, verbose)
-  if err != nil {
-    beego.Error(err)
-  }
 }
 
-
 func main() {
-  beego.ErrorController(&controllers.ErrorController{})
-  beego.Run()
+	beego.TemplateLeft = "<<<" // set to make internal template compatible with most front ends i.e. Angular, Polymer, etc
+	beego.TemplateRight = ">>>"
+
+	name := "default"
+	// Whether to drop table and re-create.
+	force := true
+	// Print log.
+	verbose := true
+	// Error.
+	err := orm.RunSyncdb(name, force, verbose)
+	if err != nil {
+		log.Println(err)
+	}
+	beego.Run()
 }
