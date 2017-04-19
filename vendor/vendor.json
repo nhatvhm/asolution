@@ -105,28 +105,10 @@
 			"revisionTime": "2015-03-01T18:00:06Z"
 		},
 		{
-			"checksumSHA1": "klyOc47RE+XhM5V6rla1nQcTrzM=",
-			"path": "github.com/go-sql-driver/mysql",
-			"revision": "a197e5d40516f2e9f74dcee085a5f2d4604e94df",
-			"revisionTime": "2015-02-25T09:28:11Z"
-		},
-		{
 			"checksumSHA1": "",
 			"path": "github.com/go-pg/pg",
 			"revision": "7c2c6c2868c8c65af793dfd05c7aade682b571c3",
 			"revisionTime": "2017-04-14T16:31:17Z"
-		},
-		{
-			"checksumSHA1": "",
-			"path": "github.com/jinzhu/inflection",
-			"revision": "1c35d901db3da928c72a72d8458480cc9ade058f",
-			"revisionTime": "2017-01-02T19:52:26Z"
-		},
-		{
-			"checksumSHA1": "PT3+xPmICQYYJZFJYAqb4MS0tN4=",
-			"path": "github.com/jtolds/gls",
-			"revision": "f1ac7f4f24f50328e6bc838ca4437d1612a0243c",
-			"revisionTime": "2014-11-03T18:57:36Z"
 		},
 		{
 			"checksumSHA1": "+x6gRb66eEbW7roVUtFaZSTKCjs=",
@@ -139,18 +121,6 @@
 			"path": "github.com/lib/pq/oid",
 			"revision": "30ed2200d7ec99cf17272292f1d4b7b0bd7165db",
 			"revisionTime": "2015-03-16T23:43:46Z"
-		},
-		{
-			"checksumSHA1": "5fDO/ZUqE81RoTN7arSvK2EvknQ=",
-			"path": "github.com/mattn/go-sqlite3",
-			"revision": "5253daf8561a6ca5015fd5ce79e4367912146be9",
-			"revisionTime": "2015-03-19T04:29:43Z"
-		},
-		{
-			"checksumSHA1": "nPGq7dmz2JG/aoL2jxXWsoYEO7c=",
-			"path": "github.com/mattn/go-sqlite3/sqlite3_test",
-			"revision": "5253daf8561a6ca5015fd5ce79e4367912146be9",
-			"revisionTime": "2015-03-19T04:29:43Z"
 		},
 		{
 			"checksumSHA1": "jP/+sJvRI3uJ+xvSd7Gm0JAttNA=",
@@ -193,24 +163,6 @@
 			"path": "github.com/smartystreets/goconvey/convey/reporting",
 			"revision": "1d9daca83fc3cf35d01b9d0ac2debad3453bf178",
 			"revisionTime": "2015-03-12T19:12:55Z"
-		},
-		{
-			"checksumSHA1": "Cm/LzdvxeFg8DopDMhFEYDfRzfI=",
-			"path": "github.com/twinj/uuid",
-			"revision": "89173bcdda19db0eb88aef1e1cb1cb2505561d31",
-			"revisionTime": "2015-10-29T04:44:42Z"
-		},
-		{
-			"checksumSHA1": "5HymxKSV8zcw6eiNV5Z/MZBPmuU=",
-			"path": "golang.org/x/crypto/bcrypt",
-			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
-			"revisionTime": "2016-04-26T12:32:32Z"
-		},
-		{
-			"checksumSHA1": "iuAAm/pl3SoUWM39eUWX7Os+yPg=",
-			"path": "golang.org/x/crypto/blowfish",
-			"revision": "285fb2ed20d1dc450fc743a1b3ff7c36bef372b9",
-			"revisionTime": "2016-04-26T12:32:32Z"
 		}
 	],
 	"rootPath": "github.com/nhatvhm/asolution"
