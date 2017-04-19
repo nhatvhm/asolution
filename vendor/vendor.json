@@ -105,6 +105,12 @@
 			"revisionTime": "2015-03-01T18:00:06Z"
 		},
 		{
+			"checksumSHA1": "klyOc47RE+XhM5V6rla1nQcTrzM=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "a197e5d40516f2e9f74dcee085a5f2d4604e94df",
+			"revisionTime": "2015-02-25T09:28:11Z"
+		},
+		{
 			"checksumSHA1": "",
 			"path": "github.com/go-pg/pg",
 			"revision": "7c2c6c2868c8c65af793dfd05c7aade682b571c3",
