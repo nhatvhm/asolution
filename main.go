@@ -57,7 +57,7 @@ func main() {
 	// Reconfig port
 	port, err := strconv.Atoi(os.Getenv("PORT"))
     if err == nil {
-        beego.HTTPPort = port
+        beego.httpport = port
     }
 	beego.Run()
 }
