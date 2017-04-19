@@ -15,8 +15,8 @@ import (
 var (
    dbConnectString string = beego.AppConfig.String("dbConnectString")
    dbDriverName string = beego.AppConfig.String("dbDriverName")
-   dbMaxIdle = beego.AppConfig.Int("dbMaxIdle")
-   dbMaxConn = beego.AppConfig.Int("dbMaxConn")
+   dbMaxIdle int = beego.AppConfig.Int("dbMaxIdle")
+   dbMaxConn int = beego.AppConfig.Int("dbMaxConn")
  )
 
 func init() {
