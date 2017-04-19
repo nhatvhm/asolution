@@ -56,7 +56,7 @@ func main() {
 	}
 	// Reconfig port
 	port := os.Getenv("PORT")
-	fmt.Println("listening in PORT: " + port)
+	fmt.Println("listening PORT: " + port)
     if err != nil {
         beego.Run(":" + port)
     }
