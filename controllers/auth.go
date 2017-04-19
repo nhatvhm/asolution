@@ -11,7 +11,7 @@ import (
 )
 
 func (this *LoginController) LoginView() {
-	this.TplNames = "authentication/login.html"
+	this.TplName = "authentication/login.html"
 }
 
 var sessionName = beego.AppConfig.String("SessionName")
@@ -21,7 +21,7 @@ type LoginController struct {
 }
 
 func (this *LoginController) RegisterView() {
-	this.TplNames = "authentication/register.html"
+	this.TplName = "authentication/register.html"
 }
 
 func (this *LoginController) Register() {
@@ -62,7 +62,7 @@ func (this *LoginController) Register() {
 
 		this.Redirect("/", 302)
 	}
-	this.TplNames = "authentication/register.html"
+	this.TplName = "authentication/register.html"
 }
 
 func (this *LoginController) Login() {
@@ -89,7 +89,7 @@ func (this *LoginController) Logout() {
 }
 
 func (this *LoginController) AppView() {
-	this.TplNames = "app/welcome.html"
+	this.TplName = "app/welcome.html"
 }
 
 func VerifyUser(user *models.User, username, password string) (success bool) {
