@@ -5,13 +5,11 @@ import (
 	"github.com/astaxie/beego/orm"
 	_ "github.com/astaxie/beego/session/mysql" // used for all session stores
 	_ "github.com/astaxie/beego/session/redis"
-	_ "github.com/nhatvhm/asolution/models"
-	_ "github.com/nhatvhm/asolution/routers"
+	_ "asolution/models"
+	_ "asolution/routers"
 	_ "github.com/lib/pq"
 	"log"
 	"time"
-	"fmt"
-    "os"
 )
 
 var (
@@ -54,10 +52,5 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
-	// Reconfig port
-	port := os.Getenv("PORT")
-	fmt.Println("listening PORT: " + port)
-    if err != nil {
-        beego.Run(":" + port)
-    }
+	beego.Run()
 }

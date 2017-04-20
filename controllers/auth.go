@@ -5,8 +5,8 @@ import (
 	"github.com/astaxie/beego/context"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/validation"
-	"github.com/nhatvhm/asolution/models"
-	"github.com/nhatvhm/asolution/utils"
+	"asolution/models"
+	"asolution/utils"
 	"log"
 )
 
